@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Happy Birthday ♡</title><link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="final-page">
+<canvas id="confetti"></canvas>
+
+<main class="final-main">
+
+  <div class="cake" id="cake"><div class="flame"></div><div class="candle"></div><div class="icing"></div><div class="cake-body"></div></div>
+  <p class="overline">27 · 10 · 2007</p>
+  <h1>Happy Birthday,<br><i id="name">Ko Ko</i> ♡</h1>
+ 
+
+<button class="dark-btn" id="celebrate">🎉 Celebrate My Birthday 🎂</button>
+
+
+
+<section id="wishArea" class="wish-area" hidden>
+  <span class="chapter">A LITTLE MOMENT FOR YOU</span>
+
+  <h2>Close your eyes. Make a wish. ♡</h2>
+
+  <p>
+    This time, it's your wish.
+    Nobody else gets to choose it for you.
+    Write down whatever your heart wishes for.
+  </p>
+
+  <form id="wishForm">
+    <textarea
+      id="wishInput"
+      name="wish"
+      maxlength="1500"
+      rows="6"
+      placeholder="If I could wish for anything..."
+      required
+    ></textarea>
+
+    <button id="saveWish" class="dark-btn" type="submit">
+      Save My Wish ♡
+    </button>
+  </form>
+
+  <p id="saveStatus" role="status" aria-live="polite"></p>
+</section>
+
+<audio id="birthdaySong" preload="auto">
+  <source src="assets/nastelbom-happy-birthday-495860.mp3" type="audio/mpeg">
+</audio>
+
+
+ 
+</main>
+<script src="js/config.js"></script><script src="js/guard.js"></script><script src="js/final.js"></script>
+</body>
+</html>

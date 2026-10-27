@@ -1,0 +1,1 @@
+const text="This isn't just a birthday page.";let i=0;const el=document.querySelector('#typing');function type(){if(i<text.length){el.textContent+=text[i++];setTimeout(type,55)}}type();document.querySelector('#continue').onclick=()=>location.href='gift.html';

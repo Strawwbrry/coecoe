@@ -1,0 +1,1 @@
+if(sessionStorage.getItem('birthdayUnlocked')!=='yes')location.replace('index.html');

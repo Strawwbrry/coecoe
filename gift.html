@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>One little gift</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="gift-page">
+<div class="ambient"></div>
+<header class="minimal-head"><span>02 / 06</span><span>FOR YOU ♡</span></header>
+<main class="gift-stage">
+  <p class="overline">BEFORE ANYTHING ELSE</p>
+  <h1>There is a gift<br><i>inside this page.</i></h1>
+  <p class="subtle">You have to open it yourself.</p>
+  <div class="gift-box" id="gift">
+    <div class="lid"><span>♡</span></div>
+    <div class="box-body"></div>
+    <div class="ribbon-v"></div><div class="ribbon-h"></div>
+    <div class="glow"></div>
+  </div>
+  <button class="dark-btn" id="openGift">Open it</button>
+  <div class="hint">tap the box or button</div>
+</main>
+<script src="js/guard.js"></script>
+<script>
+const gift=document.querySelector('#gift');
+const open=()=>{gift.classList.add('opened');setTimeout(()=>location.href='memories.html',1200)}
+gift.addEventListener('click',open);document.querySelector('#openGift').addEventListener('click',open);
+</script>
+</body>
+</html>

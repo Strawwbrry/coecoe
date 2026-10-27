@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+  <title>A letter</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="letter-page">
+  <header class="minimal-head"><span>04 / 06</span><span>ONE LETTER</span></header>
+  <main class="letter-stage">
+    <div class="envelope-wrap" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="letter-sheet">
+        <small>FOR YOU</small>
+        <h1>Dear birthday boy,</h1>
+        <p id="letterText">Happy birthday, my love!
+
+          I hope this new chapter of your life brings you good health, peace of mind, and lots of happiness.
+          <br> May all the things you've been wishing for come true, and I hope you do really well in your exams too.
+          I know you can do your best, and your baby believes in you so much.
+          <br>
+
+          I hope you'll understand just how much your baby loves you.
+          And I hope you'll always be
+          caring son to your parents. 
+          Honestly, you already are, so I don't even need to remind you
+          about that.
+          Most of all, I hope your days are filled with happy moments and beautiful things. I just want to see you
+          happy, my love. That's all your baby wants.
+
+
+          I love you so, so much, my birthday boy.
+        </p>
+
+        <div class="signature"> from me ♡</div>
+      </div>
+      <div class="envelope-flap"></div>
+    </div>
+    <button class="dark-btn" id="openLetter">Open the envelope</button>
+    <a class="next-link" href="secret.html">one more thing <b>→</b></a>
+  </main>
+  <script src="js/guard.js"></script>
+  <script>
+    const env = document.querySelector('#envelope');
+    document.querySelector('#openLetter').onclick = () => { env.classList.toggle('opened'); document.querySelector('#openLetter').textContent = env.classList.contains('opened') ? 'Read it again' : 'Open the envelope' }
+  </script>
+</body>
+
+</html>
